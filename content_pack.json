@@ -1,0 +1,82 @@
+{
+  "_note": "Seeded, pre-verified content for demo reliability. CONFIRM syllable splits against Leo's real data-pack file before locking. All words are 3-syllable with a hard medial chunk, in Leo's space/animal themes.",
+  "items": [
+    {
+      "id": "s1",
+      "role": "demo_session1",
+      "theme": "space",
+      "sentence": "The astronaut floated past the window.",
+      "target_word": "astronaut",
+      "syllables": ["as", "tro", "naut"],
+      "target_chunk": "tro",
+      "chunk_position": "medial",
+      "reason": "3-syllable word; the medial consonant blend 'tro' is the likely break point."
+    },
+    {
+      "id": "s2",
+      "role": "demo_session2",
+      "theme": "space",
+      "sentence": "A giant asteroid raced toward the planet.",
+      "target_word": "asteroid",
+      "syllables": ["as", "ter", "oid"],
+      "target_chunk": "ter",
+      "chunk_position": "medial",
+      "reason": "Same pattern as astronaut: 3-syllable, hard medial chunk 'ter'. Intentionally parallel so the learned Skill visibly transfers."
+    },
+    {
+      "id": "f1",
+      "role": "fallback",
+      "theme": "animals",
+      "sentence": "The octopus hid behind a rock.",
+      "target_word": "octopus",
+      "syllables": ["oc", "to", "pus"],
+      "target_chunk": "to",
+      "chunk_position": "medial",
+      "reason": "3-syllable animal word with a medial chunk."
+    },
+    {
+      "id": "f2",
+      "role": "fallback",
+      "theme": "animals",
+      "sentence": "A gorilla climbed the tall tree.",
+      "target_word": "gorilla",
+      "syllables": ["go", "ril", "la"],
+      "target_chunk": "ril",
+      "chunk_position": "medial",
+      "reason": "Medial 'ril' is an r-blend break point."
+    },
+    {
+      "id": "f3",
+      "role": "fallback",
+      "theme": "space",
+      "sentence": "The spaceship crossed the whole galaxy.",
+      "target_word": "galaxy",
+      "syllables": ["gal", "ax", "y"],
+      "target_chunk": "ax",
+      "chunk_position": "medial",
+      "reason": "Medial 'ax' chunk, space theme."
+    },
+    {
+      "id": "f4",
+      "role": "fallback",
+      "theme": "animals",
+      "sentence": "A pink flamingo stood in the lake.",
+      "target_word": "flamingo",
+      "syllables": ["fla", "min", "go"],
+      "target_chunk": "min",
+      "chunk_position": "medial",
+      "reason": "Medial 'min' chunk, animal theme; good curveball word."
+    },
+    {
+      "id": "c1",
+      "role": "curveball",
+      "theme": "space",
+      "sentence": "The rocket zoomed into the sky.",
+      "target_word": "rocket",
+      "syllables": ["rock", "et"],
+      "target_chunk": "et",
+      "chunk_position": "final",
+      "reason": "2-syllable word; simpler blend for when Leo needs a confidence reset."
+    }
+  ]
+}
