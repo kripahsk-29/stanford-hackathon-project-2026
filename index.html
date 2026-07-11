@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Domino</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ SIGN IN ============ -->
+<section id="screen-signin" class="screen active ui">
+  <div class="opener-center ui">
+    <h1 class="brand xl">Domino</h1>
+    <p class="tagline">Who's reading today?</p>
+    <div class="profiles">
+      <button class="profile-tile" id="btn-leo">
+        <svg viewBox="0 0 100 100" class="blob av"><circle cx="50" cy="50" r="44" fill="#A8D5F2"/><circle cx="38" cy="44" r="5" fill="#1B2A4A"/><circle cx="62" cy="44" r="5" fill="#1B2A4A"/><path d="M38 62 Q50 72 62 62" stroke="#1B2A4A" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <span>Leo</span>
+      </button>
+      <div class="profile-tile ghost">
+        <div class="add-circle">+</div>
+        <span>add reader</span>
+      </div>
+    </div>
+    <div class="blob-row" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="blob"><polygon points="50,6 94,38 77,92 23,92 6,38" fill="#1B2A4A"/><circle cx="38" cy="48" r="5" fill="#F7EFE1"/><circle cx="62" cy="48" r="5" fill="#F7EFE1"/><path d="M40 66 Q50 74 60 66" stroke="#F7EFE1" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 100 100" class="blob"><rect x="10" y="26" width="80" height="60" rx="28" fill="#D9B98C"/><circle cx="40" cy="52" r="5" fill="#1B2A4A"/><circle cx="62" cy="52" r="5" fill="#1B2A4A"/><path d="M42 68 Q51 74 60 68" stroke="#1B2A4A" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ READING — full-screen camera, sentence overlaid ============ -->
+<section id="screen-reading" class="screen stage">
+  <video id="cam" class="stage-cam" autoplay muted playsinline></video>
+  <div class="stage-content">
+    <div class="stage-top">
+      <div class="dots" id="dots"></div>
+      <div class="mic-pill" id="status-read"><span class="mic-dot"></span><span id="status-read-label">warming up…</span></div>
+    </div>
+    <div class="sentence-panel">
+      <p class="sentence" id="sentence"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRACE — draw each letter AND say it, then say the word ============ -->
+<section id="screen-trace" class="screen stage">
+  <video id="trace-cam" class="stage-cam" autoplay muted playsinline></video>
+  <canvas id="trace-overlay" class="stage-overlay"></canvas>
+  <div class="stage-content">
+    <div class="stage-top">
+      <span class="stage-label" id="trace-progress"></span>
+      <div class="mic-pill amber"><span id="status-trace"></span></div>
+    </div>
+    <div class="syllable-panel">
+      <div class="syllables" id="syllables"></div>
+    </div>
+    <div class="letter-row" id="letter-row"></div>
+    <div class="trace-hint" id="trace-hint"></div>
+    <div class="gesture-legend" id="gesture-legend" aria-hidden="true">
+      <div class="g-item g-draw">
+        <svg viewBox="0 0 40 50"><rect x="9" y="24" width="22" height="19" rx="8"/><rect x="15" y="4" width="8" height="24" rx="4"/></svg>
+        <span>draw</span>
+      </div>
+      <div class="g-item g-check">
+        <svg viewBox="0 0 40 50"><rect x="9" y="24" width="22" height="19" rx="8"/><rect x="11" y="4" width="7" height="24" rx="3.5"/><rect x="21" y="4" width="7" height="24" rx="3.5"/></svg>
+        <span>check</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WRAP ============ -->
+<section id="screen-wrap" class="screen stage ui">
+  <div class="opener-center ui">
+    <h1 class="brand">Quest complete</h1>
+    <div class="banner grad-navy big" id="wrap-memory">You're doing great. EverOS memory updated — tomorrow's sentences already know today's wins.</div>
+    <div class="wrap-stats" id="wrap-stats"></div>
+    <button class="btn-pill" id="btn-restart">Back to start</button>
+  </div>
+</section>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
