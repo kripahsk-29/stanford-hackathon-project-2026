@@ -1,0 +1,187 @@
+{
+  "learner": {
+    "user_id": "leo_carter",
+    "display_name": "Leo Carter",
+    "age": 10,
+    "grade": "5th grade (reading, IEP)",
+    "note_for_builders": "This learner is the EDUCATOR / INSTITUTION-TOOLS case (dyslexia profile, has an IEP). The sessions mix Leo's own turns with the tutor/support-staff LOGGING notes for the team — a memory-aware build should accumulate these into progress documentation, not lose them between sessions. Embedded hooks: (1) decoding 3+ syllable words is the PERSISTENT bottleneck (W2, W6 both flag it); (2) reads aloud anxiously in front of peers but thrives 1:1 (W3 logs this); (3) engages deeply with interest-based texts — space and animals (W2, W4); (4) fluency is incremental: ~60 wpm baseline (W1) -> ~65 wpm (W4) -> holds ~65 (W6); (5) W5 is an ABSENCE; (6) W6 is a re-assessment that is DUE for a parent update and an IEP progress note — the whole history, not a snapshot, is what those documents need. Feed all 6 in order. Demo tip for the 'Educator Tools' track: after loading, ask your tool to draft the parent update / IEP progress note — a memory-less tool describes only today; a memory-aware one writes the arc (baseline -> gains -> what's still shaky -> what works) and cites the specific logged moments."
+  },
+  "sessions": [
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w1_baseline",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1780671600000,
+          "content": "Hi Leo! Today we're just going to read together, no pressure. Can you read this short passage out loud for me?"
+        },
+        {
+          "role": "user",
+          "timestamp": 1780671660000,
+          "content": "The... sun... was... b-big and... br-bright. The... an-i-mals... um... the animals came... out."
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1780671675000,
+          "content": "Nice work getting through that. When I read you the next part, can you tell me what happens? [reads aloud] 'The clever fox hid behind the tall oak tree and waited for the rabbit to pass.'"
+        },
+        {
+          "role": "user",
+          "timestamp": 1780671740000,
+          "content": "the fox is hiding! behind the tree, and he's waiting to catch the rabbit. he's being sneaky."
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1780671752000,
+          "content": "Exactly right — great thinking. LOG FOR TEAM (baseline): Leo reads ~60 wpm aloud (grade level ~90-100). Decoding slows sharply on multi-syllable words ('animals' broken into pieces). Comprehension is STRONG when text is read to him — full inferential answer about the fox. Confidence okay 1:1."
+        }
+      ]
+    },
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w2_phonics_syllables",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1781276400000,
+          "content": "Leo, today we break big words into chunks. I heard you love space, so our words are space words. Try clapping the parts: 'plan-et'."
+        },
+        {
+          "role": "user",
+          "timestamp": 1781276450000,
+          "content": "plan-et! two claps. that one's easy."
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1781276462000,
+          "content": "Perfect. Now a bigger one: 'as-tro-naut'. Three parts."
+        },
+        {
+          "role": "user",
+          "timestamp": 1781276520000,
+          "content": "as... tro... um... as-tro-not? that one is hard, three is a lot."
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1781276532000,
+          "content": "You got it — astronaut! Three-syllable words are the tricky ones and you pushed through. Want to read a short space passage as your reward?"
+        },
+        {
+          "role": "user",
+          "timestamp": 1781276590000,
+          "content": "yes!! space is my favorite. can it be about rockets"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1781276602000,
+          "content": "Rockets it is. LOG FOR TEAM: Leo handles 2-syllable words comfortably; 3+ syllables ('astronaut') is the clear bottleneck — needs more chunking practice there. Engagement HIGH with space-themed material. Interest-based texts are a strong lever for him."
+        }
+      ]
+    },
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w3_read_aloud_practice",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1781881200000,
+          "content": "Leo, we practiced reading in the small group today. How did that feel?"
+        },
+        {
+          "role": "user",
+          "timestamp": 1781881270000,
+          "content": "i didn't like it. the other kids were listening and i got the words wrong and my face got hot. can we just do it you and me?"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1781881282000,
+          "content": "Absolutely, you and me. You don't have to read in front of the group if it makes you nervous. Let's read the same passage now, just us."
+        },
+        {
+          "role": "user",
+          "timestamp": 1781881350000,
+          "content": "ok. [reads] The little... rob-ot... rolled across the... red... planet. it looked for... water."
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1781881362000,
+          "content": "Much smoother that time — 'robot' and 'planet' both came out well. See how much easier it feels one-on-one? LOG FOR TEAM: Leo showed clear anxiety reading aloud in front of peers ('my face got hot'), significantly more fluent and willing 1:1. Recommend keeping read-aloud practice individual for now; revisit group setting only when confidence is higher."
+        }
+      ]
+    },
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w4_fluency_drills",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1782486000000,
+          "content": "Fluency day, Leo! Same short passage a few times to build speed. This one's about a sea turtle — I know you like animals too."
+        },
+        {
+          "role": "user",
+          "timestamp": 1782486060000,
+          "content": "[reads] The sea turtle swims in the... deep... blue water. She... trav-els far to lay her eggs. yeah animals are cool, turtles are so old"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1782486072000,
+          "content": "Great reading! 'Travels' — you chunked it, tra-vels, nice. Let's time the next round."
+        },
+        {
+          "role": "user",
+          "timestamp": 1782486140000,
+          "content": "i read it faster that time right? did i beat my score"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1782486152000,
+          "content": "You did — a little faster and smoother. LOG FOR TEAM: measured ~65 wpm today, up from ~60 at baseline — small but real gain. Confidence visibly up after a strong read on the animal passage; he asked to 'beat his score,' good motivation. Interest-based texts (space, animals) continue to be the most effective."
+        }
+      ]
+    },
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w5_absent",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1783090800000,
+          "content": "LOG FOR TEAM: Leo was absent this week — missed the scheduled session (out sick). No new data collected. Plan to re-assess next session and hold pacing steady; do not push new skills, resume with a confidence-building interest-based passage first."
+        }
+      ]
+    },
+    {
+      "user_id": "leo_carter",
+      "session_id": "leo_w6_reassessment",
+      "messages": [
+        {
+          "role": "assistant",
+          "timestamp": 1783695600000,
+          "content": "Welcome back, Leo! Missed you last week. Let's warm up with a space passage since those are your favorite, then I'll check your reading."
+        },
+        {
+          "role": "user",
+          "timestamp": 1783695670000,
+          "content": "[reads] The... sat-el-lite... hmm... orbits the... planet and sends... sig-nals to... Earth. the big word was hard again"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1783695682000,
+          "content": "You still got 'satellite' by chunking it — that's a four-part word, really tough, well done. Comprehension check: what does the satellite do? [reads it to him]"
+        },
+        {
+          "role": "user",
+          "timestamp": 1783695740000,
+          "content": "it goes around the planet and sends signals to earth, like messages. i knew that part when you read it"
+        },
+        {
+          "role": "assistant",
+          "timestamp": 1783695752000,
+          "content": "Exactly right. LOG FOR TEAM (re-assessment): fluency holding at ~65 wpm after the missed week — no regression, which is a win. Decoding 3+ syllable words ('satellite') remains the persistent bottleneck. Comprehension stays strong when read to. DUE: parent update and IEP progress note — should reflect the full arc (60 -> 65 wpm over 6 weeks, one absence, decoding still the target area, thrives 1:1 and with space/animal texts), not just today's numbers."
+        }
+      ]
+    }
+  ]
+}
