@@ -18,6 +18,14 @@ Runs in MOCK mode by default -- no API key, no waiting on teammates.
 import json, os, re, string
 from pathlib import Path
 
+# Load .env if present (works whether called via server or directly)
+_env = Path(__file__).parent / ".env"
+if _env.exists():
+    for _line in _env.read_text().splitlines():
+        if _line.strip() and not _line.startswith("#") and "=" in _line:
+            _k, _v = _line.split("=", 1)
+            os.environ.setdefault(_k.strip(), _v.strip())
+
 USE_MOCK = os.environ.get("AGENT_MOCK", "1") != "0"
 MODEL = os.environ.get("AGENT_MODEL", "claude-sonnet-4-6")
 PACK = json.loads((Path(__file__).parent / "content_pack.json").read_text())
